@@ -1,0 +1,187 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  width:100vw;
+  height:100vh;
+  background: rgb(252,252,252);
+}
+header{
+  background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+}
+nav .app_link a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav .nav_items ul{
+  display:flex;
+  align-items: center;
+  list-style: none;
+}
+nav .nav_items ul li a{
+  text-decoration: none;
+  color:#fff;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.content_wrapper{
+  color:#fff;
+  width: 100%;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content_wrapper img{
+   width:300px;
+   height:60px;
+   opacity: 1;
+  top: 0px;
+  left: 0px;
+  object-fit: contain;
+  transform: none;
+  }
+.content_wrapper h1{
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+.content_wrapper h1 span{
+  font-weight: 600;
+}
+.search_container{
+  display:flex;
+  align-items: center;
+  background:#fff;
+  height: 3.4rem;
+  width:55%;
+  border-radius: 8px;
+}
+.search_container .left_search, .search_container .right_search{
+  display: inline-flex;
+  padding: 0 1rem;
+}
+.search_container .left_search{
+  width:35%;
+  border-right: 2px solid rgba(189,188,188);
+}
+.search_container .right_search{
+  width:65%;
+}
+.search_container input{
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color:grey;
+  width:100%;
+  margin-left: 6px;
+}
+.search_container .left_search i{
+  color:rgba(240,125,125);
+  font-size: 20px;
+}
+.search_container .right_search i{
+  color:rgba(240,125,125);
+  font-size: 20px;
+}
+
+
+/* .......................Order Section................... */
+
+.order {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.card {
+  flex: 1 1 calc(50% - 20px); 
+  max-width: calc(50% - 20px);
+  border-radius: 8px;
+  border: 1px solid rgba(209, 207, 207, 0.5);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .content {
+  padding: 10px;
+  background: #fff;
+  text-align: left;
+}
+.order .card .content .heading{
+  text-align: left;
+  font-weight: 500;
+  font-size:1.2rem;
+  line-height: 3.2rem;
+  color: rgb(54, 54, 54);
+}
+.order .card .content .text{
+  margin:0;
+  color: rgb(79, 79, 79);
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: inherit;
+  line-height: 1.5;
+}
+.menu-icon{
+  color:#fff;
+  font-size: 30px;
+  display: none;
+}
+
+
+/* ......................media for small scren size.......... */
+@media only screen and (max-width:768px){
+  .menu-icon{
+    display:block;
+  }
+  nav .app_link a, nav .nav_items ul{
+    display:none;
+  }
+  .content_wrapper h1{
+    font-size:1.5rem;
+  }
+  .content_wrapper img{
+    width:250px;
+  }
+}
